@@ -44,7 +44,7 @@ Full results are in **[docs/QA-REPORT.md](docs/QA-REPORT.md)**.
 | Check | Tool | Result |
 |---|---|---|
 | Accessibility | axe-core 4.10, WCAG 2.2 AA + best practices | 0 violations (16 page/theme runs) |
-| Lighthouse (static build) | Lighthouse, mobile + desktop | Accessibility, Best Practices, SEO **100**. Performance 92–100 |
+| Lighthouse (live site) | Lighthouse, mobile + desktop, 4 page types | Accessibility, Best Practices, SEO **100**. Performance **94–100** |
 | Broken links | Custom crawler ([tools/check-links.mjs](tools/check-links.mjs)) | Found 1 real broken link (an outdated SJSU URL), fixed it. Now 0 |
 | Responsive | Overflow check on 8 pages × 7 widths (320–1920 px) | 0 issues in 56 checks; mobile layouts verified visually |
 | Workflow | Manual, all three roles | Scout can't publish; submissions arrive as Pending; editor publishes |

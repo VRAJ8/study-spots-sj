@@ -12,8 +12,8 @@
 |---|---|---|
 | Automated accessibility | axe-core 4.10.2 (WCAG 2.0/2.1/2.2 A + AA, best practices) | **0 violations** in 16 runs (8 pages × 2 themes) |
 | Color contrast | 47 token pairs calculated with the WCAG relative-luminance formula | **47/47 pass** after fixes (6 failed initially) |
-| Lighthouse | Static build, mobile (simulated 4G) + desktop | Accessibility **100**, Best Practices **100**, SEO **100**, Performance **92–100** |
-| Broken links | Crawler: 21 pages, 42–44 unique links/assets incl. external | **1 real broken link found and fixed** → 0 |
+| Lighthouse | Live site (GitHub Pages), 4 page types, mobile (simulated 4G) + desktop | Accessibility **100**, Best Practices **100**, SEO **100**, Performance **94–100** (15 of 16 runs at 100) |
+| Broken links | Crawler on the live site: 21 pages, 43 unique links/assets incl. external | **1 real broken link found and fixed** → 0 (sjsu.edu was down site-wide during the final run; the link was verified 200 earlier) |
 | Responsive layout | 8 pages × 7 widths (320, 375, 390, 768, 1024, 1440, 1920 px) | **0 overflow issues** in 56 checks |
 | PHP errors | Every template rendered, output scanned for notices/warnings/fatals | **0** |
 | Browser console | Front end and editor | **0 errors** after fixes |
@@ -97,4 +97,4 @@ Automated tools catch about a third of accessibility issues, so these are worth 
 
 ## 8. Reports
 
-Lighthouse HTML reports are in [`docs/reports/`](reports/).
+Lighthouse HTML reports from the live site are in [`docs/reports/`](reports/).

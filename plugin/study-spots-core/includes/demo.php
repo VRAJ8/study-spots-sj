@@ -109,3 +109,14 @@ add_action(
 		echo '</ul></div>';
 	}
 );
+
+// Playground pins its own WordPress build; the core update nag is noise in the demo.
+add_action(
+	'admin_init',
+	function () {
+		if ( ss_demo_enabled() ) {
+			remove_action( 'admin_notices', 'update_nag', 3 );
+			remove_action( 'network_admin_notices', 'update_nag', 3 );
+		}
+	}
+);
