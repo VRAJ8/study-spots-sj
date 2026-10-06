@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "study-spots/spot-hero",
+	"title": "Spot Hero",
+	"category": "study-spots",
+	"icon": "cover-image",
+	"description": "Generative cover with title, area, summary and vibes for the current spot.",
+	"usesContext": [ "postId", "postType" ],
+	"supports": { "align": [ "full" ], "html": false },
+	"editorScript": "study-spots-editor",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,29 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "activatePlugin",
+			"pluginPath": "study-spots-core/study-spots-core.php"
+		},
+		{
+			"step": "activateTheme",
+			"themeFolderName": "study-spots"
+		},
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"ss_demo_mode": 1
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; echo ss_seed(); foreach ( get_users( array( 'fields' => 'ID' ) ) as $id ) { update_user_meta( $id, 'wp_persisted_preferences', array( 'core/edit-post' => array( 'welcomeGuide' => false ), 'core' => array( 'welcomeGuide' => false ), '_modified' => gmdate( 'c' ) ) ); }"
+		}
+	]
+}

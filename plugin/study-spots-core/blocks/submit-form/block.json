@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "study-spots/submit-form",
+	"title": "Suggest a Spot Form",
+	"category": "study-spots",
+	"icon": "feedback",
+	"description": "Public form. Submissions go to the review queue as Pending.",
+	"supports": { "html": false, "multiple": false },
+	"editorScript": "study-spots-editor",
+	"render": "file:./render.php"
+}

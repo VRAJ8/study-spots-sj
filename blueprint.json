@@ -1,0 +1,55 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "Study Spots SJ \u2014 live WordPress demo",
+		"description": "Custom block theme + plugin: structured content, roles, review workflow, content audit.",
+		"author": "VRAJ8"
+	},
+	"landingPage": "/wp-admin/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/VRAJ8/study-spots-sj",
+				"ref": "main",
+				"path": "plugin/study-spots-core"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "study-spots-core"
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "git:directory",
+				"url": "https://github.com/VRAJ8/study-spots-sj",
+				"ref": "main",
+				"path": "theme/study-spots"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "study-spots"
+			}
+		},
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"ss_demo_mode": 1
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; echo ss_seed(); foreach ( get_users( array( 'fields' => 'ID' ) ) as $id ) { update_user_meta( $id, 'wp_persisted_preferences', array( 'core/edit-post' => array( 'welcomeGuide' => false ), 'core' => array( 'welcomeGuide' => false ), '_modified' => gmdate( 'c' ) ) ); }"
+		}
+	]
+}

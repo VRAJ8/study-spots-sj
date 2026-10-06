@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "study-spots/vibe-tiles",
+	"title": "Vibe Tiles",
+	"category": "study-spots",
+	"icon": "art",
+	"description": "One tile per vibe, linking to filtered results.",
+	"supports": { "align": [ "wide", "full" ], "html": false },
+	"editorScript": "study-spots-editor",
+	"render": "file:./render.php"
+}

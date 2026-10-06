@@ -1,0 +1,21 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"ss-site-header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"ss-main ss-page","layout":{"type":"constrained"}} -->
+<main class="wp-block-group ss-main ss-page">
+<!-- wp:query-title {"type":"search","className":"ss-page-title"} /-->
+<!-- wp:search {"label":"Search","buttonText":"Search","className":"ss-searchform"} /-->
+<!-- wp:query {"queryId":2,"query":{"perPage":10,"inherit":true}} -->
+<div class="wp-block-query">
+<!-- wp:post-template -->
+<!-- wp:post-title {"isLink":true,"level":2} /-->
+<!-- wp:post-excerpt /-->
+<!-- /wp:post-template -->
+<!-- wp:query-no-results -->
+<!-- wp:paragraph --><p>No results. Try the <a href="/spots/">spot explorer</a>, which filters as you type.</p><!-- /wp:paragraph -->
+<!-- /wp:query-no-results -->
+</div>
+<!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"ss-site-footer"} /-->

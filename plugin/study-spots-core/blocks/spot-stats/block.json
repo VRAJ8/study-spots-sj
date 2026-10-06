@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "study-spots/spot-stats",
+	"title": "Spot Stats",
+	"category": "study-spots",
+	"icon": "performance",
+	"description": "Live counts: spots, areas, late-night options.",
+	"supports": { "html": false },
+	"editorScript": "study-spots-editor",
+	"render": "file:./render.php"
+}

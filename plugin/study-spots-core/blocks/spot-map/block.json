@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "study-spots/spot-map",
+	"title": "Spot Map",
+	"category": "study-spots",
+	"icon": "location",
+	"description": "Interactive map of spots. On a single spot, shows just that spot.",
+	"attributes": {
+		"height": { "type": "number", "default": 460 }
+	},
+	"supports": { "align": [ "wide", "full" ], "html": false },
+	"editorScript": "study-spots-editor",
+	"viewScript": "study-spots-map",
+	"render": "file:./render.php"
+}

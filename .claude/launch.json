@@ -1,0 +1,6 @@
+{
+	"version": "0.0.1",
+	"configurations": [
+		{ "name": "wordpress", "runtimeExecutable": "./dev.sh", "runtimeArgs": [], "port": 9400 }
+	]
+}

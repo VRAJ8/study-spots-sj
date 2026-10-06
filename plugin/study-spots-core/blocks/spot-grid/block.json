@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "study-spots/spot-grid",
+	"title": "Spot Grid",
+	"category": "study-spots",
+	"icon": "grid-view",
+	"description": "Filterable cards of published spots.",
+	"keywords": [ "spots", "cards", "directory" ],
+	"attributes": {
+		"limit": { "type": "number", "default": -1 },
+		"showFilters": { "type": "boolean", "default": true },
+		"headingLevel": { "type": "number", "default": 3 },
+		"excludeCurrent": { "type": "boolean", "default": false }
+	},
+	"supports": { "align": [ "wide", "full" ], "html": false },
+	"editorScript": "study-spots-editor",
+	"viewScript": "study-spots-grid",
+	"render": "file:./render.php"
+}

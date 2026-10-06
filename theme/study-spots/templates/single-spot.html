@@ -1,0 +1,44 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"ss-site-header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"ss-main ss-single","layout":{"type":"constrained"}} -->
+<main class="wp-block-group ss-main ss-single">
+<!-- wp:study-spots/spot-hero {"align":"full"} /-->
+
+<!-- wp:columns {"align":"wide","className":"ss-single__cols"} -->
+<div class="wp-block-columns alignwide ss-single__cols">
+<!-- wp:column {"width":"60%","className":"ss-single__content"} -->
+<div class="wp-block-column ss-single__content" style="flex-basis:60%">
+<!-- wp:post-content {"className":"ss-prose","layout":{"type":"default"}} /-->
+<!-- wp:post-author-name {"isLink":false,"className":"ss-byline"} /-->
+<!-- wp:post-modified-date {"className":"ss-updated","format":"M j, Y"} /-->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"40%","className":"ss-single__aside"} -->
+<div class="wp-block-column ss-single__aside" style="flex-basis:40%">
+<!-- wp:group {"tagName":"aside","className":"ss-aside-card","layout":{"type":"default"}} -->
+<aside class="wp-block-group ss-aside-card">
+<!-- wp:study-spots/spot-meters /-->
+<!-- wp:study-spots/spot-facts /-->
+</aside>
+<!-- /wp:group -->
+<!-- wp:study-spots/spot-map {"height":280} /-->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"align":"wide","className":"ss-section ss-more","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide ss-section ss-more">
+<!-- wp:heading {"className":"ss-section__title"} -->
+<h2 class="wp-block-heading ss-section__title">More spots to try</h2>
+<!-- /wp:heading -->
+<!-- wp:study-spots/spot-grid {"limit":3,"showFilters":false,"excludeCurrent":true,"align":"wide"} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:pattern {"slug":"study-spots/cta"} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"ss-site-footer"} /-->

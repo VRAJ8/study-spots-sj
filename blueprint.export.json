@@ -1,0 +1,9 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"preferredVersions": { "php": "8.3", "wp": "latest" },
+	"steps": [
+		{ "step": "activatePlugin", "pluginPath": "study-spots-core/study-spots-core.php" },
+		{ "step": "activateTheme", "themeFolderName": "study-spots" },
+		{ "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; echo ss_seed();" }
+	]
+}
