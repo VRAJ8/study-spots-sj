@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vraj8.github.io/study-spots-sj/sitemap.xml
